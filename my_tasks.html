@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Tasks</title>
+  <style>
+    * {
+      margin: 0;
+    }
+    .form {
+      display: flex;
+      width: 70%;
+      background-color: rgba(120, 120, 120, 0.2);
+      justify-content: space-between;
+      padding: 15px 20px;
+      /* border: 2px solid rebeccapurple; */
+      border-radius: 10px;
+      margin: 10px auto;
+    }
+    @media (max-width: 770px) {
+      .form {
+        width: 90%;
+        padding: 15px 10px;
+      }
+    }
+    .input {
+      width: 70%;
+      height: 40px;
+      border: 2px solid rebeccapurple;
+      border-radius: 10px;
+      font-size: 25px;
+    }
+    .add {
+      width: 20%;
+      height: 40px;
+      background-color: rebeccapurple;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 20px;
+      letter-spacing: 2;
+      color: aliceblue;
+    }
+    .tasks {
+      width: 70%;
+      background-color: rgba(120, 120, 120, 0.2);
+      padding: 15px 20px;
+      /* border: 2px solid rebeccapurple; */
+      border-radius: 10px;
+      margin: 10px auto;
+    }
+    @media (max-width: 770px) {
+      .tasks {
+        width: 90%;
+        padding: 15px 10px;
+      }
+    }
+    .tasks .task {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 2px solid rebeccapurple;
+      border-radius: 10px;
+      font-size: 25px;
+      padding: 7px;
+      background-color: aliceblue;
+      margin: 20px auto;
+    }
+    .tasks .task:hover {
+      background-color: #f7f7f7;
+    }
+    .tasks .done {
+      opacity: 0.5;
+    }
+    .tasks .task span {
+      cursor: pointer;
+      padding: 6px 10px;
+      font-weight: bold;
+      color: white;
+      border-radius: 4px;
+      font-size: 15px;
+      background-color: rebeccapurple;
+    }
+    .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: rebeccapurple;
+      color: white;
+      text-align: center;
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+    }
+    .footer span {
+      padding: 10px 10px 10px 5px;
+      color: rgb(255, 38, 0);
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="form">
+    <input type="text" class="input">
+    <input type="submit" class="add" value="Add Task">
+  </div>
+  <div class="tasks"></div>
+  <script src="my_tasks.js"></script>
+  <div class="footer">
+    Made by<span>Mazin Emad</span>
+  </div>
+</body>
+</html>
